@@ -37,8 +37,8 @@ export function mergeObject4<T extends object, U extends object>(obj1: T, obj2: 
   for (const key in obj2) {
     const val1 = result[key];
     const val2 = obj2[key];
-    if (key in result && typeof result[key] === "object" && typeof obj2[key] === "object") {
-      result[key] = mergeObject4(result[key], obj2[key]);
+    if (val1 && typeof val1 == "object" && val2 && typeof val2== "object") {
+      result[key] = mergeObject4(val1 , val2);
     } else {
       result[key] = obj2[key];
     }
