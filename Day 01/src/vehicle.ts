@@ -1,0 +1,4 @@
+interface Vehicle{
+    speed:number;
+    
+}
