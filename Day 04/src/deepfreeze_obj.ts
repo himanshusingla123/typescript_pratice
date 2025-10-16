@@ -1,5 +1,5 @@
 type DeepFreeze<T> = {
-  [k in keyof T]: T[k] extends object ? DeepFreeze<T[k]> : T[k];
+  readonly [k in keyof T]: T[k] extends object ? DeepFreeze<T[k]> : T[k];
 };
 export function deepFreezeObjects<T>(obj:T):DeepFreeze<T>{
     let result:any= Array.isArray(obj) ? [] : {};;

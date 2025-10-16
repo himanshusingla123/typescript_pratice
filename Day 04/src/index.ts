@@ -1,5 +1,6 @@
 import { deepFreezeObjects } from "./deepfreeze_obj.js";
 import { filterByProperty } from "./filter_obj.js";
+import { safeJsonParse } from "./Result_obj.js";
 
 type User = {
   id: number;
@@ -29,3 +30,12 @@ const frozen = deepFreezeObjects(person);
 // frozen.address.city = "London";
 
 console.log(frozen);
+
+
+const data = safeJsonParse<{ name: string }>('{"name": "Alice"}');
+
+if (data.ok) {
+  console.log("✅ Parsed successfully:", data.value.name);
+} else {
+  console.error("❌ Parse error:", data.error.message);
+}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsc && node \"dist/Day 04/src/index.js\"",
+    "dev": "npx tsc && node \"dist/Day 05/src/index.js\"",
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
