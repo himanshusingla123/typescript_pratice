@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tsc && node \"dist/Day 05/src/index.js\"",
+    "dev": "npx tsc && node \"dist/Day 08/src/index.js\"",
     "build": "npx tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,8 +13,24 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-openid-connect": "^2.19.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "rxjs": "^7.8.2",
     "tsx": "^4.20.6",
-    "typescript": "^5.9.3",
+    "vite": "^7.1.11",
     "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.8.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "typescript": "^5.9.3"
   }
 }
