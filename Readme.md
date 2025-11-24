@@ -95,3 +95,51 @@ export default defineConfig({
   }
 });
 ```
+
+---
+
+```json
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsc && cpr \"Day 12/public\" dist/\"Day 12/public\" -o && node \"dist/Day 12/src/index.js\"",
+    "build": "npx tsc && cpr public dist/public -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.17.1",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@trpc/client": "^11.6.0",
+    "@trpc/server": "^11.6.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-openid-connect": "^2.19.2",
+    "prisma": "^6.17.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "rxjs": "^7.8.2",
+    "tsx": "^4.20.6",
+    "vite": "^7.1.11",
+    "ws": "^8.18.3",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.8.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@types/ws": "^8.18.1",
+    "cpr": "^3.0.1",
+    "typescript": "^5.9.3"
+  }
+}
+```
